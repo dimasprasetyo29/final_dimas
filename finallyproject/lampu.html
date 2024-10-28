@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lampu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .btn {
+        margin: 5px;
+        padding: 10px 15px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn a {
+        text-decoration: none;
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+      }
+      .room {
+        width: 45%;
+        height: 300px;
+        margin: 10px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .utama {
+        background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/room-zoom-background-design-template-ce8afff3faa2f6417cd44cbef087fee9_screen.jpg?ts=1587370340);
+      }
+      .meeting {
+        background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-meeting-room-zoom-background-design-template-41427545f6cfab068f86042b81466180_screen.jpg?ts=1607701776);
+      }
+      .Resepsion {
+        background-image: url(https://grandsaunajakarta.com/wp-content/uploads/2019/03/Hyatt-Regency-Phuket-Resort-P132-Nahm-Spa-Reception.4x3.jpg);
+      }
+      .Dapur {
+        background-image: url(https://perkim.id/wp-content/uploads/2022/09/Pencahayaan-alami.jpg);
+      }
+      .Toilet {
+        background-image: url(https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/03/15/4266727195.jpg);
+      }
+      .Gudang {
+        background-image: url(https://cdns.diadona.id/diadona.id/resized/640x320/news/2021/10/18/51468/7-tips-maksimalkan-penyimpanan-pada-gudang-yang-penuh-gak-sesak-lagi-deh-2110188.jpg);
+      }
+
+      @media (max-width: 768px) {
+        .room {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SMK BINA NUSANTARA</h1>
+    <div style="text-align: center">
+      <button class="btn"><a href="Home.html"> HOME</a></button>
+      <button class="btn"><a href="Layout.html"> LAYOUT</a></button>
+    </div>
+    <div class="container">
+      <div class="room utama">
+        <h2>Ruang Utama</h2>
+        <img
+          id="myImage1"
+          src="https://www.w3schools.com/js/pic_bulboff.gif"
+          style="width: 100px"
+        />
+        <button onclick="trueOnLampu('myImage1', 'status1', 'timer1')">
+          on
+        </button>
+        <button onclick="turnOffLamp('myImage1', 'status1', 'timer1')">
+          off
+        </button>
+        <p id="status1">Lampu Mati</p>
+        <p id="timer1"></p>
+      </div>
+      <div class="room meeting">
+        <h2>Ruang Meeting</h2>
+        <img
+          id="myImage2"
+          src="https://www.w3schools.com/js/pic_bulboff.gif"
+          style="width: 100px"
+        />
+        <button onclick="trueOnLampu('myImage2', 'status2', 'timer2')">
+          on
+        </button>
+        <button onclick="turnOffLamp('myImage2', 'status2', 'timer2')">
+          off
+        </button>
+        <p id="status2">Lampu Mati</p>
+        <p id="timer2"></p>
+      </div>
+      <div class="room Resepsion">
+        <h2>Ruang Resepsionis</h2>
+        <img
+          id="myImage3"
+          src="https://www.w3schools.com/js/pic_bulboff.gif"
+          style="width: 100px"
+        />
+        <button onclick="trueOnLampu('myImage3', 'status3', 'timer3')">
+          on
+        </button>
+        <button onclick="turnOffLamp('myImage3', 'status3', 'timer3')">
+          off
+        </button>
+        <p id="status3">Lampu Mati</p>
+        <p id="timer3"></p>
+      </div>
+      <div class="room Dapur">
+        <h2>Ruang Dapur</h2>
+        <img
+          id="myImage4"
+          src="https://www.w3schools.com/js/pic_bulboff.gif"
+          style="width: 100px"
+        />
+        <button onclick="trueOnLampu('myImage4', 'status4', 'timer4')">
+          on
+        </button>
+        <button onclick="turnOffLamp('myImage4', 'status4', 'timer4')">
+          off
+        </button>
+        <p id="status4">Lampu Mati</p>
+        <p id="timer4"></p>
+      </div>
+      <div class="room Toilet">
+        <h2>Toilet</h2>
+        <img
+          id="myImage5"
+          src="https://www.w3schools.com/js/pic_bulboff.gif"
+          style="width: 100px"
+        />
+        <button onclick="trueOnLampu('myImage5', 'status5', 'timer5')">
+          on
+        </button>
+        <button onclick="turnOffLamp('myImage5', 'status5', 'timer5')">
+          off
+        </button>
+        <p id="status5">Lampu Mati</p>
+        <p id="timer5"></p>
+      </div>
+      <div class="room Gudang">
+        <h2>Gudang</h2>
+        <img
+          id="myImage6"
+          src="https://www.w3schools.com/js/pic_bulboff.gif"
+          style="width: 100px"
+        />
+        <button onclick="trueOnLampu('myImage6', 'status6', 'timer6')">
+          on
+        </button>
+        <button onclick="turnOffLamp('myImage6', 'status6', 'timer6')">
+          off
+        </button>
+        <p id="status6">Lampu Mati</p>
+        <p id="timer6"></p>
+      </div>
+    </div>
+
+    <script>
+      function trueOnLampu(imageId, statusId, timerId) {
+        document.getElementById(imageId).src =
+          "https://www.w3schools.com/js/pic_bulbon.gif";
+        document.getElementById(statusId).innerText = "Lampu Menyala";
+
+        let countdown = 3; // Set timer for 3 seconds
+        document.getElementById(timerId).innerText =
+          "Timer: " + countdown + " Detik";
+
+        let timerInterval = setInterval(function () {
+          countdown--;
+          if (countdown > 0) {
+            document.getElementById(timerId).innerText =
+              "Timer: " + countdown + " Detik";
+          } else {
+            clearInterval(timerInterval);
+            document.getElementById(timerId).innerText = "";
+            document.getElementById(imageId).src =
+              "https://www.w3schools.com/js/pic_bulboff.gif";
+            document.getElementById(statusId).innerText = "Lampu Mati";
+          }
+        }, 900);
+      }
+
+      function turnOffLamp(imageId, statusId, timerId) {
+        document.getElementById(imageId).src =
+          "https://www.w3schools.com/js/pic_bulboff.gif";
+        document.getElementById(statusId).innerText = "Lampu Mati";
+        document.getElementById(timerId).innerText = "";
+      }
+    </script>
+  </body>
+</html>

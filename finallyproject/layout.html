@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>finallayout</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: rgb(216, 207, 207);
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .card,
+      .Card {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        flex: 1 1 30%; /* Adjusts flex-basis for responsiveness */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        min-width: 250px; /* Ensures cards are not too small */
+      }
+
+      .fakeimg {
+        background-color: gray;
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      @media screen and (max-width: 768px) {
+        li {
+          float: none;
+        }
+
+        .container {
+          flex-direction: column; /* Stack items vertically on smaller screens */
+          align-items: center; /* Center items */
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .container {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="background-color: rgb(225, 228, 231)">
+    <h1 style="text-align: center; font-size: 300%">
+      Selamat Datang di Website Sederhana dimas
+    </h1>
+    <p style="text-align: center">Website Kumpulan Project Basic Koding</p>
+
+    <ul>
+      <li><a class="active" href="tabel.html">Home</a></li>
+      <li><a href="lampu.html">Project</a></li>
+      <li style="float: right"><a href="tabel.html">Back</a></li>
+    </ul>
+
+    <div class="container">
+      <div class="card">
+        <h1>Tabel Sederhana HTML</h1>
+        <p><strong>SMK BINUS Mranggen, 18 Oktober, 2024</strong></p>
+        <img
+          class="fakeimg"
+          src="https://www.dicoding.com/blog/wp-content/uploads/2020/04/Internship-Robby-Table-HTML-celpadd-color.jpg"
+          width="100%"
+          height="auto"
+        />
+        <p>Tabel Sederhana</p>
+        <p>ini adalah contoh tabel</p>
+      </div>
+
+      <div class="Card">
+        <h1>Presiden ke-7</h1>
+        <img
+          src="../image/Presiden Jokowi Dodo.jpeg"
+          alt=""
+          width="150px"
+          height="150px "
+        />
+        <p>
+          Ir. H. Joko Widodo (Indonesia: [dʒɔkɔ widɔdɔ]; lahir 21 Juni 1961),
+          lebih dikenal sebagai Jokowi adalah presiden Indonesia ke-7 yang mulai
+          menjabat sejak terpilih dalam pemilihan umum tahun 2014. Jokowi
+          menjadi presiden Indonesia pertama yang sebelumnya merupakan kepala
+          daerah dan bukan berasal dari elite politik atau militer Indonesia.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h1>Finally lampu HTML</h1>
+        <p><strong>SMK BINUS Mranggen, 18 Oktober, 2024</strong></p>
+        <img
+          class="fakeimg"
+          src="../image/pic_bulbon.gif"
+          width="100%"
+          height="auto"
+        />
+        <p>lampu pintar</p>
+        <p>ini adalah contoh gambar lampu</p>
+      </div>
+
+      <div class="Card">
+        <h1>follow me</h1>
+        <p><a href="https://www.instagram.com/">instagram</a></p>
+        <p>
+          <a
+            href="https://www.tiktok.com/@dmzzsterr?is_from_webapp=1&sender_device=pc"
+            >tiktok</a
+          >
+        </p>
+        <p><a href="https://www.youtube.com/">youtube</a></p>
+      </div>
+    </div>
+  </body>
+</html>
