@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata Diri</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+      }
+      .biodata {
+        margin-bottom: 20px;
+      }
+      .biodata label {
+        display: block;
+        margin: 5px 0;
+      }
+      .biodata input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Biodata Diri</h1>
+      <div class="biodata">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" />
+
+        <label for="age">Usia:</label>
+        <input type="number" id="age" placeholder="Masukkan usia Anda" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Masukkan email Anda" />
+
+        <label for="address">Alamat:</label>
+        <input type="text" id="address" placeholder="Masukkan alamat Anda" />
+      </div>
+      <button id="saveButton">Simpan Biodata</button>
+      <div id="result" class="result" style="margin-top: 20px"></div>
+    </div>
+
+    <script>
+      document.getElementById("saveButton").onclick = function () {
+        const name = document.getElementById("name").value;
+        const age = document.getElementById("age").value;
+        const email = document.getElementById("email").value;
+        const address = document.getElementById("address").value;
+
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = `
+                <h2>Data Biodata Anda:</h2>
+                <p><strong>Nama:</strong> ${name}</p>
+                <p><strong>Usia:</strong> ${age}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Alamat:</strong> ${address}</p>
+            `;
+      };
+    </script>
+  </body>
+</html>

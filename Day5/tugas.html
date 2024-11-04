@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tugas penilaian</title>
+  </head>
+  <body>
+    <h1>penilaian siswa</h1>
+
+    <!-- form input nilai -->
+
+    <label for="nilai">masukkan umur</label>
+    <input type="number" id="umur" placeholder="masukkan umur" />
+    <button onclick="cekumur()">cek umur</button>
+
+    <!-- tempat menampilkan hasil -->
+
+    <p id="hasil"></p>
+
+    <script>
+      // fungsi untuk mengecek nilai dan menampilkan grade
+
+      function cekumur() {
+        var umur = document.getElementById("umur").value;
+        var hasil = "";
+
+        // cek kondisi nilai dan tentukan grade
+
+        if (umur >= 50) {
+          hasil = " kamu adalah tua BEBAN";
+        } else if (umur >= 20) {
+          hasil = " kamu adalah dewasa";
+        } else if (umur >= 15) {
+          hasil = " kamu adalah remaja";
+        } else if (umur >= 5) {
+          hasil = " kamu adalah bocil";
+        } else if (umur >= 1 - 4) {
+          hasil = " kamu adalah bayi";
+        }
+        // menampilkan hasil di elemen dengan id hasil
+
+        document.getElementById("hasil").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>

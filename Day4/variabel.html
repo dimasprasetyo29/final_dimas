@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>belajar variabel java script</h1>
+    <p id="hasil"></p>
+
+    <script>
+      // nama yang ada di var dapat di ganti
+      var email = "dmzsterr_@gmail.com";
+      console.log("email: " + email);
+
+      //   let dapat di ganti tetapi hanya di dalam script
+      let umur = 15;
+      console.log("umur: " + umur);
+
+      //   const tidak dapat di ganti
+      const sekolah = "smk bina nusantara";
+      console.log("smk bina nusantara: " + sekolah);
+
+      //   menampilkan hasil pada html
+      document.getElementById("hasil").innerHTML =
+        "email : " +
+        email +
+        "<br>" +
+        "umur : " +
+        umur +
+        "<br>" +
+        "smk bina nusantara : " +
+        sekolah;
+    </script>
+  </body>
+</html>

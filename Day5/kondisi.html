@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>penilaian siswa</title>
+  </head>
+  <body>
+    <h1>penilaian siswa</h1>
+
+    <!-- form input nilai -->
+
+    <label for="nilai">masukkan nilai</label>
+    <input type="number" id="nilai" placeholder="masukkan nilai" />
+    <button onclick="cekNilai()">cek Nilai</button>
+
+    <!-- tempat menampilkan hasil -->
+
+    <p id="hasil"></p>
+
+    <script>
+      // fungsi untuk mengecek nilai dan menampilkan grade
+
+      function cekNilai() {
+        var nilai = document.getElementById("nilai").value;
+        var hasil = "";
+
+        // cek kondisi nilai dan tentukan grade
+
+        if (nilai >= 90) {
+          hasil = "nilai kamu adalah A.";
+        } else if (nilai >= 80) {
+          hasil = "nilai kamu adalah B.";
+        } else if (nilai >= 70) {
+          hasil = "nilai kamu adalah C.";
+        } else {
+          hasil = "nilai kamu di bawah C.";
+        }
+
+        // menampilkan hasil di elemen dengan id hasil
+
+        document.getElementById("hasil").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>

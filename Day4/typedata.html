@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>belajar tipe data java script</h1>
+    <p id="hasil"></p>
+
+    <h1>KOENIGSEGG</h1>
+    <img
+      src="https://i.pinimg.com/564x/c0/3f/64/c03f64ee5519d70028af794bee0ad877.jpg"
+      alt="koenigsegg"
+    />
+    <br /><br />
+    <h1>MASERATI</h1>
+    <img
+      src="https://i.pinimg.com/564x/49/aa/a4/49aaa493788c6d7e88da40eb347b288e.jpg"
+      alt="maserati"
+    />
+    <br /><br />
+    <h1>MY GARAGE</h1>
+    <img
+      src="https://i.pinimg.com/564x/48/ce/f2/48cef277161d468706aaa41501d1e98b.jpg"
+      alt="my garage"
+    />
+    <br /><br />
+
+    <script>
+      // tipe data string (teks)
+      let nama = "DMZSTERR_"; //teks selalu dalam titik dua ""
+      console.log("nama:" + nama);
+
+      //   tipe data number(angka)
+      let umur = 15; //angka tidak perlu titik dua ""
+      console.log("umur:" + umur);
+
+      //   tipe data boolean(true/false)
+      let sudahmenikah = false; //nilai boolean hanya bisa true atau false
+      console.log("sudah menikah:" + sudahmenikah);
+
+      //   tipe data array (daftar)
+      let hobi = ["mengoleksi mobil", "bermain bola"];
+      console.log("hobi:" + hobi);
+
+      //   tipe data object (objek)
+      let siswa = {
+        nama: "dimas ",
+        kelas: "10 smk",
+        usia: 15,
+      };
+      console.log("siswa:", siswa);
+
+      //menampilkan hasil pada halaman html
+      document.getElementById("hasil").innerHTML =
+        "<b>Tipe Data:</b><br>" +
+        "nama (string):" +
+        nama +
+        "<br>" +
+        "umur (number):" +
+        umur +
+        "<br>" +
+        "sudah menikah (Boolean):" +
+        sudahmenikah +
+        "<br>" +
+        "hobi (array);" +
+        hobi +
+        "<br>" +
+        "siswa (object): nama :" +
+        siswa.nama +
+        "kelas : " +
+        siswa.kelas +
+        ",usia:" +
+        siswa.usia;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="tampilkanArray()">
+    <p id="pertama"></p>
+    <p id="kedua"></p>
+    <p id="hapus"></p>
+    <p id="hapuspertama"></p>
+    <p id="panjang"></p>
+    <p id="semuabuah"></p>
+
+    <script>
+      function tampilkanArray() {
+        var buah = ["apel", "pisang", "semangka"];
+        document.getElementById("pertama").innerHTML =
+          "buah pertama: " + buah[0];
+        document.getElementById("pertama").innerHTML = "buah kedua: " + buah[1];
+        document.getElementById("kedua");
+
+        buah.push("nanas");
+
+        var buahTerakhir = buah.pop();
+        var buahPertama = buah.shift();
+
+        document.getElementById("hapus").innerHTML =
+          "buah terakhir di hapus: " + buahTerakhir;
+        document.getElementById("hapuspertama").innerHTML =
+          "buah pertama di hapus: " + buahPertama;
+        document.getElementById("panjang").innerHTML =
+          "total buah setelah penghapusan: " + buah.length;
+        document.getElementById("semuabuah").innerHTML =
+          "semuabuah: " + buah.join(",");
+      }
+    </script>
+  </body>
+</html>

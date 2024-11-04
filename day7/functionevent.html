@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="hasil"></p>
+    <script>
+      //fungsi untuk menjumlahkan dua angka
+      function tambah(a, b) {
+        return (hasilAritmatika =
+          "Hasil Penjumlahan: " +
+          (a + b) +
+          "<br>" +
+          "Hasil Pengurangan: " +
+          (a - b) +
+          "<br>" +
+          "Hasil Perkalian: " +
+          a * b +
+          "<br>" +
+          "Hasil Pembagian: " +
+          a / b +
+          "<br>" +
+          "Hasil Sisa Bagi: " +
+          (a % b));
+        document.getElementById("aritmatika").innerHTML = hasilAritmatika;
+      }
+      let hasil = tambah(10, 12);
+
+      //menampilkan hasil didalam elemen <p> dengan id "hasil"
+      document.getElementById("hasil").innerHTML = "hasil penjumlahan" + hasil;
+    </script>
+  </body>
+</html>

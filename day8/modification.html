@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="mydiv">hello world</div>
+    <img id="myimage" src="../image/pic_bulboff.gif" alt="gambar awal" />
+    <div
+      id="mydiv"
+      style="width: 100px; height: 100px; background-color: rgb(0, 136, 255)"
+    >
+      contoh element
+    </div>
+    <script>
+      let mydiv = document.getElementById("mydiv");
+      mydiv.textContent = "hello java script!!!";
+
+      document
+        .getElementById("myimage")
+        .setAttribute("src", "../image/pic_bulbon.gif");
+      document
+        .getElementById("myimage")
+        .setAttribute("alt", "../image/pic_bulbon.gif");
+
+      // mengubah properti css element
+      let div = document.getElementById("mydiv");
+      div.style.backgroundColor = "lightgreen"; //ubah warna latar belakang
+      div.style.width = "200px"; //ubah lebar
+      div.style.height = "200px"; //ubah tinggi
+    </script>
+  </body>
+</html>

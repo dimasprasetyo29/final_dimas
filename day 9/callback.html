@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function prosesData(callback) {
+      setTimeout(function () {
+        console.log("data diproses");
+        callback();
+      }, 200);
+    }
+
+    function setelahselesai() {
+      console.log("operasi selesai, callback di panggil ");
+    }
+    prosesData(setelahselesai);
+  </script>
+  <body>
+    <h1>contoh callback di java script</h1>
+    <p>buka consol browser (f12) untuk melihat haasil dari callback</p>
+  </body>
+</html>

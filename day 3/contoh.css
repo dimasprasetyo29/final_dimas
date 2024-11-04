@@ -1,0 +1,33 @@
+.dmz {
+    color: rgb(0, 0, 0);
+}
+#bmw {
+    color: rgb(0, 0, 242);
+    
+}
+body {
+    color: rgb(56, 255, 255);
+    background-color: rgb(89, 231, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+    background-color: rgb(0, 255, 255);
+    gap: 10px;
+}
+/* //INLINE: CODING NYA SATU2: contoh <p>style color:biru  <p> */
+/* body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  } */
+  

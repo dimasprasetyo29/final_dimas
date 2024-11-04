@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tugas tipe data java script</h1>
+    <p id="hasil"></p>
+
+    <script>
+      let namalengkap = "Dimas prasetyo wibowo";
+      console.log("namalengkap:" + namalengkap);
+
+      let usia = 15;
+      console.log("usia:" + usia);
+
+      let sudahmakan = false;
+      console.log("sudah makan:" + sudahmakan);
+
+      let hobi = [
+        "mengoleksi mobil",
+        "bermain bola",
+        "bantai land of down",
+        "tidur",
+        "menggambar",
+      ];
+      console.log("hobi:" + hobi);
+
+      let identitas = {
+        nama: "dimas ",
+        kelas: "10 smk",
+        usia: 15,
+      };
+      console.log("identitas:", identitas);
+
+      document.getElementById("hasil").innerHTML =
+        "<b>Tipe Data:</b><br>" +
+        "nama lengkap (string):" +
+        namalengkap +
+        "<br>" +
+        "usia (number):" +
+        usia +
+        "<br>" +
+        "sudah makan (Boolean):" +
+        sudahmakan +
+        "<br>" +
+        "hobi (array);" +
+        hobi +
+        "<br>" +
+        "siswa (object): nama :" +
+        identitas.nama +
+        "kelas : " +
+        identitas.kelas +
+        ",usia:" +
+        identitas.usia;
+    </script>
+  </body>
+</html>

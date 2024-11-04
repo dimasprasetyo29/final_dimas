@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch</title>
+  </head>
+  <body>
+    <h2>pilih bulan berdasarkan nomor</h2>
+    <label for="bulan">masukkan nomor bulan(1-12) </label>
+    <input type="number" id="bulan" placeholder="masukkan nomor bulan" />
+    <button onclick="cekbulan()">cek bulan</button>
+    <p id="hasilbulan"></p>
+
+    <script>
+      function cekbulan() {
+        var nomorbulan = parseInt(document.getElementById("bulan").value);
+        var hasil = "";
+        let month;
+        switch (nomorbulan) {
+          case 1:
+            hasil = "sekarang ini adalah january";
+            break;
+          case 2:
+            hasil = "sekarang ini adalah february";
+            break;
+          case 3:
+            hasil = "sekarang ini adalah maret";
+            break;
+          case 4:
+            hasil = "sekarang ini adalah april";
+            break;
+          case 5:
+            hasil = "sekarang ini adalah mei";
+            break;
+          case 6:
+            hasil = "sekarang ini adalah juni";
+            break;
+          case 7:
+            hasil = "sekarang ini adalah juli";
+            break;
+          case 8:
+            hasil = "sekarang ini adalah agustus";
+            break;
+          case 9:
+            hasil = "sekarang ini adalah september";
+            break;
+          case 10:
+            hasil = "sekarang ini adalah oktober";
+            break;
+          case 11:
+            hasil = "sekarang ini adalah november";
+            break;
+          case 12:
+            hasil = "sekarang ini adalah desember";
+            break;
+          default:
+            hasil = "bang... BULAN NYA CUMA 12 NGENTD";
+        }
+
+        document.getElementById("hasilbulan").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>

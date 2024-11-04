@@ -1,0 +1,14 @@
+body {
+
+    table,
+    th,
+    td 
+    {
+      border: 1px solid;
+    }
+img {   
+    width: 350px;
+    height: 300px;
+    }
+
+}

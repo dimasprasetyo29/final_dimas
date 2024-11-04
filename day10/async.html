@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>contoh ascyn/await di java script</h1>
+    <p>buka konsol browser (f 12) unutk melihat hasil dari async/await</p>
+    <script>
+      function ambildata() {
+        return new Promise((resolve) => {
+          setTimeout(() => {}, 2000);
+          resolve("data berhasil di ambil");
+        });
+      }
+      async function prosesAsync() {
+        console.log("menunggu data . . .");
+
+        let hasil = await ambildata();
+
+        console.log(hasil);
+      }
+      window.onload = function () {
+        prosesAsync();
+      };
+    </script>
+  </body>
+</html>

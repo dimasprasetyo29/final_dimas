@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* //body untuk background dan untuk menempatkan kotak label di tengah */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0%;
+      background-color: rgb(0, 255, 255);
+    }
+    /* form untuk garis garis yang ada di tabel */
+    form {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+  </style>
+  <body>
+    <!-- // from ini untuk bagian membuat label -->
+    <form action="./ave.html">
+      <!-- //label ini untuk bagian membuat option -->
+      <label for="fname"> Nama Depan:</label><br />
+      <!-- // input ini untuk bagian teks -->
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Nama Depan . . ."
+      /><br /><br />
+      <label for="iname">Nama Belakang:</label><br />
+      <input
+        type="text"
+        id="Iname"
+        name="Iname"
+        placeholder="Nama  Belakang . . ."
+      /><br /><br />
+      <!-- // submit untuk mengirim data di atas -->
+      <input type="submit" value="kirim" />
+    </form>
+  </body>
+</html>

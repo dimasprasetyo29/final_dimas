@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch</title>
+  </head>
+  <body>
+    <h2>pilih hari berdasarkan nomor</h2>
+    <label for="hari">masukkan nomor hari(1-7) </label>
+    <input type="number" id="hari" placeholder="masukkan nomor hari" />
+    <button onclick="cekhari()">cek hari</button>
+    <p id="hasilhari"></p>
+
+    <script>
+      function cekhari() {
+        var nomorhari = parseInt(document.getElementById("hari").value);
+        var hasil = "";
+        let day;
+        switch (nomorhari) {
+          case 1:
+            hasil = "hari ini adalah Senin";
+            break;
+          case 2:
+            hasil = "hari ini adalah selasa";
+            break;
+          case 3:
+            hasil = "hari ini adalah rabu";
+            break;
+          case 4:
+            hasil = "hari ini adalah kamis";
+            break;
+          case 5:
+            hasil = "hari ini adalah jumat";
+            break;
+          case 6:
+            hasil = "hari ini adalah sabtu";
+            break;
+          case 7:
+            hasil = "hari ini adalah minggu";
+          default:
+            hasil = "hasil ini tidak ada mohon masukkan nomor 1-7";
+        }
+
+        document.getElementById("hasilhari").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>
